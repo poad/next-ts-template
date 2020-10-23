@@ -1,6 +1,4 @@
 {
-  "name": "next-ts-template",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "test": "jest --passWithNoTests",
