@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  AppBar, CssBaseline, Divider, Drawer, Hidden, IconButton, List, ListItem, ListItemIcon, ListItemText, Toolbar, Typography,
+  AppBar, Box, CssBaseline, Divider, Drawer, IconButton, List, ListItem, ListItemIcon, ListItemText, Toolbar, Typography,
 } from '@mui/material';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -11,10 +11,6 @@ import {
 const drawerWidth = 240;
 
 interface LayoutProps {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   container?: Element
 }
 
@@ -28,75 +24,64 @@ const Layout: React.FC<LayoutProps> = (props) => {
   }
 
   const drawer = (
-    <div>
-      <div style={theme.mixins.toolbar} />
+    <Box sx={{ width: drawerWidth, backgroundColor: theme.palette.primary.main, color: theme.palette.primary.contrastText }}>
+      <Box sx={theme.mixins.toolbar} />
       <Divider />
       <List>
         {['Info'].map((text) => (
-          <ListItem button key={text} sx={{ color: '#fff', }}>
-            <ListItemIcon sx={{ color: '#fff', }}>
-              <DashboardIcon />
+          <ListItem button key={text} sx={{
+            width: drawerWidth,
+            backgroundColor: theme.palette.primary.main,
+            '&:hover': {
+              backgroundColor: theme.palette.primary.light,
+            },
+          }}>
+            <ListItemIcon>
+              <DashboardIcon sx={{ color: theme.palette.primary.contrastText }}/>
             </ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
       </List>
-    </div>
+    </Box>
   );
 
   return (
-    <div style={{ display: 'flex', color: '#fff', }}>
+    <Box sx={{ display: 'flex', color: theme.palette.primary.contrastText }}>
       <CssBaseline />
-      <AppBar position="fixed" sx={{ marginLeft: drawerWidth, [theme.breakpoints.up('sm')]: { width: `calc(100% - ${drawerWidth}px)`, }, }}>
+      <AppBar position="fixed" sx={{ width: '100%' }}>
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ marginRight: theme.spacing(2), [theme.breakpoints.up('sm')]: { display: 'none', }, }}
           >
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap></Typography>
         </Toolbar>
       </AppBar>
-      <nav style={{ [theme.breakpoints.up('sm')]: { width: drawerWidth, flexShrink: 0, }, }} aria-label="mailbox folders">
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-        <Hidden smUp implementation="css">
-          <Drawer
-            container={container}
-            variant="temporary"
-            anchor={theme.direction === 'rtl' ? 'right' : 'left'}
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            sx={{
-              paper: { width: drawerWidth, backgroundColor: theme.palette.primary.main, },
-            }}
-            ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
-            }}
-          >
-            {drawer}
-          </Drawer>
-        </Hidden>
-        <Hidden xsDown implementation="css">
-          <Drawer
-            sx={{
-              paper: { width: drawerWidth, backgroundColor: theme.palette.primary.main, },
-            }}
-            variant="permanent"
-            open
-          >
-            {drawer}
-          </Drawer>
-        </Hidden>
-      </nav>
-      <main style={{ flexGrow: 1, }}>
-        <div style={theme.mixins.toolbar} />
+      <Box component='nav' sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } } } aria-label="folders">
+        <Drawer
+          container={container}
+          variant="temporary"
+          anchor='left'
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          sx={{
+            '& .MuiDrawer-paper': {  backgroundColor: theme.palette.primary.main, boxSizing: 'border-box', width: drawerWidth },
+          }}
+          ModalProps={{ keepMounted: true }}
+        >
+          {drawer}
+        </Drawer>
+      </Box>
+      <main style={{ flexGrow: 1 }}>
+        <Box sx={theme.mixins.toolbar} />
         {props.children}
       </main>
-    </div>
+    </Box>
   );
 };
 
