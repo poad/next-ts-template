@@ -535,14 +535,6 @@
   dependencies:
     jest-get-type "^28.0.2"
 
-"@jest/expect@^28.0.2":
-  version "28.0.2"
-  resolved "https://registry.yarnpkg.com/@jest/expect/-/expect-28.0.2.tgz#ca94154c63a69027da0932b712b0104618cb98b1"
-  integrity sha512-rxgWG/updGoQtHFw/duImu5gPN48+kHvhVjLJ0fFk2mYQ+3dp7/zLiNTjSQxc92Bq4VOk+b6ln0gSgKM4etOtQ==
-  dependencies:
-    expect "^28.0.2"
-    jest-snapshot "^28.0.2"
-
 "@jest/expect@^28.0.3":
   version "28.0.3"
   resolved "https://registry.yarnpkg.com/@jest/expect/-/expect-28.0.3.tgz#80e0233bee62586e1112f904d28b904dd1143ef2"
@@ -2716,12 +2708,12 @@ jest-changed-files@^28.0.2:
     throat "^6.0.1"
 
 jest-circus@^28.0.2:
-  version "28.0.2"
-  resolved "https://registry.yarnpkg.com/jest-circus/-/jest-circus-28.0.2.tgz#deb0a06491ae2d61ff67e28985b6ce3729db4a93"
-  integrity sha512-5U0K43UZSwu9xBo3RmK366Y8i0YMTGe2hgFm7TYka6ecT5lB0VZ+/TQTTsDVxa9q1TuOWRa7EskSMm1Q74Hy/Q==
+  version "28.0.3"
+  resolved "https://registry.yarnpkg.com/jest-circus/-/jest-circus-28.0.3.tgz#45f77090b4b9fe5c1b84f72816868c9d4c0f57b1"
+  integrity sha512-HJ3rUCm3A3faSy7KVH5MFCncqJLtrjEFkTPn9UIcs4Kq77+TXqHsOaI+/k73aHe6DJQigLUXq9rCYj3MYFlbIw==
   dependencies:
     "@jest/environment" "^28.0.2"
-    "@jest/expect" "^28.0.2"
+    "@jest/expect" "^28.0.3"
     "@jest/test-result" "^28.0.2"
     "@jest/types" "^28.0.2"
     "@types/node" "*"
@@ -2732,8 +2724,8 @@ jest-circus@^28.0.2:
     jest-each "^28.0.2"
     jest-matcher-utils "^28.0.2"
     jest-message-util "^28.0.2"
-    jest-runtime "^28.0.2"
-    jest-snapshot "^28.0.2"
+    jest-runtime "^28.0.3"
+    jest-snapshot "^28.0.3"
     jest-util "^28.0.2"
     pretty-format "^28.0.2"
     slash "^3.0.0"
