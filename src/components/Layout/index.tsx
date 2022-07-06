@@ -1,4 +1,5 @@
 import React, { PropsWithChildren } from 'react';
+import Head from 'next/head';
 import {
   AppBar, Box, CssBaseline, Divider, Drawer, IconButton, List, ListItem, ListItemIcon, ListItemText, Toolbar, Typography,
 } from '@mui/material';
@@ -7,15 +8,18 @@ import MenuIcon from '@mui/icons-material/Menu';
 import {
   useTheme,
 } from '@mui/material/styles';
+import { useTranslations } from 'next-intl';
+import LocaleSwitcher from 'components/LocaleSwitcher';
 
 const drawerWidth = 240;
 
 interface LayoutProps {
-  container?: Element
+  container?: Element,
+  title?: string,
 }
 
-const Layout = (props: PropsWithChildren<LayoutProps>) => {
-  const { container } = props;
+const Layout = ({ container, title, children }: PropsWithChildren<LayoutProps>) => {
+  const t = useTranslations('Layout');
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -57,7 +61,8 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" noWrap></Typography>
+        <Typography variant="h6" noWrap sx={{ flexGrow: 1 }}></Typography>
+        <LocaleSwitcher />
       </Toolbar>
     </AppBar>
   );
@@ -87,12 +92,18 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
   );
 
   return (
-    <Box sx={{ color: theme.palette.primary.contrastText, display: 'flex', maxHeight: '100vh' }}>
-      <CssBaseline />
-      {appBar}
-      {drawerBox}
-      {props.children}
-    </Box>
+    <>
+      <Head>
+        <title>{[title || 'Home', t('pageTitle')].join(' - ')}</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Box sx={{ color: theme.palette.primary.contrastText, display: 'flex', maxHeight: '100vh' }}>
+        <CssBaseline />
+        {appBar}
+        {drawerBox}
+        {children}
+      </Box>
+    </>
   );
 };
 

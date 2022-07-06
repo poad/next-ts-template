@@ -1,14 +1,10 @@
 /** @type {import('next').NextConfig} */
-import withPlugins from 'next-compose-plugins';
 import withBundleAnalyzer from '@next/bundle-analyzer';
 const analyzer = withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 });
 
-export const config = withPlugins([
-  [analyzer],
-],
-  {
+export const config = analyzer({
     webpack5: true,
     reactStrictMode: true,
     esmExternals: true,
@@ -16,6 +12,10 @@ export const config = withPlugins([
     swcMinify: true,
     experimental: {
       modern: true,
+    },
+    i18n: {
+      locales: ['ja', 'en'],
+      defaultLocale: 'ja'
     }
   }
 );

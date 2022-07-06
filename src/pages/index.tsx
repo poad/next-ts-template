@@ -4,6 +4,9 @@ import { styled } from '@mui/system';
 
 import Layout from '../components/Layout';
 
+import { useTranslations } from 'next-intl';
+import { GetStaticPropsContext } from 'next';
+
 const StyledBox = styled(Box)(() => ({
   maxWidth: '880px',
   display: 'flex',
@@ -36,7 +39,9 @@ const CardStyleLink = styled(Link)(() => ({
   },
 }));
 
-const Home = (): JSX.Element => {
+const Index = (): JSX.Element => {
+  const t = useTranslations('Index');
+
   return (
     <Layout>
       <Box component='main' sx={{ width: '100%', color: '#333' }}>
@@ -51,25 +56,27 @@ const Home = (): JSX.Element => {
             align='center'
             fontSize='48px'
           >
-          Welcome to Next.js!
+            {t('welcome')}
           </Typography>
         </Box>
         <Typography align='center'>
-          To get started, edit <code>pages/index.js</code> and save to reload.
+          {t.rich('navigation', {
+            code: () => <code>pages/index.tsx</code>,
+          })}
         </Typography>
 
         <StyledBox>
           <CardStyleLink href="https://nextjs.org/docs">
-            <Typography component='h3'>Documentation &rarr;</Typography>
-            <Typography component='p'>Learn more about Next.js in the documentation.</Typography>
+            <Typography component='h3'>{t('document')} &rarr;</Typography>
+            <Typography component='p'>{t('documentDescription')}</Typography>
           </CardStyleLink>
           <CardStyleLink href="https://nextjs.org/learn" className="card">
-            <Typography  component='h3'>Next.js Learn &rarr;</Typography>
-            <Typography  component='p'>Learn about Next.js by following an interactive tutorial!</Typography>
+            <Typography component='h3'>{t('learn')} &rarr;</Typography>
+            <Typography component='p'>{t('learnDescription')}</Typography>
           </CardStyleLink>
           <CardStyleLink href="https://github.com/zeit/next.js/tree/master/examples" className="card">
-            <Typography  component='h3'>Examples &rarr;</Typography>
-            <Typography  component='p'>Find other example boilerplates on the Next.js GitHub.</Typography>
+            <Typography component='h3'>{t('examples')} &rarr;</Typography>
+            <Typography component='p'>{t('examplesDescription')}</Typography>
           </CardStyleLink>
         </StyledBox>
       </Box>
@@ -77,4 +84,13 @@ const Home = (): JSX.Element => {
   );
 };
 
-export default Home;
+
+export async function getStaticProps({locale}: GetStaticPropsContext) {
+  return {
+    props: {
+      messages: (await import(`../../messages/${locale}.json`)).default
+    }
+  };
+}
+
+export default Index;

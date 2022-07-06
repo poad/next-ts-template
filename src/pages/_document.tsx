@@ -30,6 +30,8 @@ export default class NextDocument extends Document {
 
 NextDocument.getInitialProps = async (ctx: DocumentContext) => {
 
+  const { locale } = ctx;
+
   const originalRenderPage = ctx.renderPage;
 
   const cache = createCache({ key: 'css' });
@@ -58,5 +60,9 @@ NextDocument.getInitialProps = async (ctx: DocumentContext) => {
   return {
     ...initialProps,
     styles: [...React.Children.toArray(initialProps.styles), ...emotionStyleTags],
+    messages: {
+      ...import(`../../messages/${locale}.json`),
+    },
+
   };
 };

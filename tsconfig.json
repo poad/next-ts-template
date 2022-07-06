@@ -28,17 +28,6 @@
     "typeRoots": [
       "./node_modules/@types"
     ],
-    "paths": {
-      "~/*": [
-        "../*"
-      ],
-      "@/*": [
-        "../*"
-      ],
-      "../*": [
-        "../*"
-      ]
-    },
     "incremental": true
   },
   "exclude": [

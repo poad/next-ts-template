@@ -1,0 +1,22 @@
+{
+    "Index": {
+      "title": "Home",
+      "welcome": "Welcome to Next.js!",
+      "navigation": "To get started, edit <code>pages/index.tsx</code> and save to reload.",
+      "document": "Documentation",
+      "documentDescription": "Learn more about Next.js in the documentation.",
+      "learn": "Next.js Learn",
+      "learnDescription": "Learn about Next.js by following an interactive tutorial!",
+      "examples": "Examples",
+      "examplesDescription": "Find other example boilerplates on the Next.js GitHub."
+    },
+    "LocaleSwitcher": {
+      "switchLocale": "日本語"
+    },
+    "Layout": {
+      "pageTitle": "next-ts-template"
+    },
+    "Menue": {
+        "info": "Info"
+    }
+  }

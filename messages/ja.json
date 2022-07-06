@@ -1,0 +1,22 @@
+{
+    "Index": {
+      "title": "ホーム",
+      "welcome": "Next.js へようこそ！",
+      "navigation": "まずは、<code>pages/index.tsx</code> を編集し、保存して再読み込みしてください。",
+      "document": "ドキュメント",
+      "documentDescription": "Next.js の詳細については、ドキュメントをご覧ください。",
+      "learn": "Next.js について学ぶ",
+      "learnDescription": "Next.js の詳細については、ドキュメントをご覧ください。",
+      "examples": "例",
+      "examplesDescription": "他のボイラープレートのサンプルは Next.js の GitHub でご覧ください。"
+    },
+    "LocaleSwitcher": {
+      "switchLocale": "English"
+    },
+    "Layout": {
+      "pageTitle": "next-intl"
+    },
+    "Menue": {
+        "info": "Info"
+    }
+  }

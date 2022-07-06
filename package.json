@@ -24,6 +24,7 @@
     "@mui/styles": "*",
     "autoprefixer": "*",
     "next": "*",
+    "next-intl": "*",
     "postcss": "*",
     "react": "*",
     "react-dom": "*",
