@@ -992,9 +992,9 @@ __metadata:
   linkType: hard
 
 "@next/font@npm:^13":
-  version: 13.0.4
-  resolution: "@next/font@npm:13.0.4"
-  checksum: 370435a554b9c670079617954d4f2548cd649c47a4192290c51a466819fd8127a0efbb4df18d9cec207f08e814c0525558249275f426a3c1abae7395cce8bf2c
+  version: 13.0.5
+  resolution: "@next/font@npm:13.0.5"
+  checksum: 12304ac4a52be437f02a472a00e2183fc4dd49ca9b4583a2abde5249686c246346348d47231e74258659ccf54c8bca349811aec0d894c3e8824592316e78740c
   languageName: node
   linkType: hard
 
