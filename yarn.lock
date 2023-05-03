@@ -899,6 +899,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@isaacs/cliui@npm:^8.0.2":
+  version: 8.0.2
+  resolution: "@isaacs/cliui@npm:8.0.2"
+  dependencies:
+    string-width: ^5.1.2
+    string-width-cjs: "npm:string-width@^4.2.0"
+    strip-ansi: ^7.0.1
+    strip-ansi-cjs: "npm:strip-ansi@^6.0.1"
+    wrap-ansi: ^8.1.0
+    wrap-ansi-cjs: "npm:wrap-ansi@^7.0.0"
+  checksum: 4a473b9b32a7d4d3cfb7a614226e555091ff0c5a29a1734c28c72a182c2f6699b26fc6b5c2131dfd841e86b185aea714c72201d7c98c2fba5f17709333a67aeb
+  languageName: node
+  linkType: hard
+
 "@jridgewell/gen-mapping@npm:^0.3.0, @jridgewell/gen-mapping@npm:^0.3.2":
   version: 0.3.3
   resolution: "@jridgewell/gen-mapping@npm:0.3.3"
@@ -2340,20 +2354,6 @@ __metadata:
   version: 0.0.1
   resolution: "client-only@npm:0.0.1"
   checksum: 0c16bf660dadb90610553c1d8946a7fdfb81d624adea073b8440b7d795d5b5b08beb3c950c6a2cf16279365a3265158a236876d92bce16423c485c322d7dfaf8
-  languageName: node
-  linkType: hard
-
-"cliui@github:isaacs/cliui#isaacs/esm-cjs-consistency":
-  version: 8.0.1
-  resolution: "cliui@https://github.com/isaacs/cliui.git#commit=9f97090165675fdda63a79c29bc36bb1033506b0"
-  dependencies:
-    string-width: ^5.1.2
-    string-width-cjs: "npm:string-width@^4.2.0"
-    strip-ansi: ^7.0.1
-    strip-ansi-cjs: "npm:strip-ansi@^6.0.1"
-    wrap-ansi: ^8.1.0
-    wrap-ansi-cjs: "npm:wrap-ansi@^7.0.0"
-  checksum: 6c07a98973be6602591687a9e302f555eaf7fff608c1e8a78995ab54acbc9d56f1e3b88eeee62c284be19ff1d20159ef9b28488c36287b0704656e77c2977551
   languageName: node
   linkType: hard
 
@@ -4924,15 +4924,15 @@ __metadata:
   linkType: hard
 
 "jackspeak@npm:^2.0.3":
-  version: 2.1.4
-  resolution: "jackspeak@npm:2.1.4"
+  version: 2.2.0
+  resolution: "jackspeak@npm:2.2.0"
   dependencies:
+    "@isaacs/cliui": ^8.0.2
     "@pkgjs/parseargs": ^0.11.0
-    cliui: "github:isaacs/cliui#isaacs/esm-cjs-consistency"
   dependenciesMeta:
     "@pkgjs/parseargs":
       optional: true
-  checksum: 6071e1a6a5382dff4f34a3647a8ad72accd611939d89760217d75e82200d0d8be669062d1d490748e9eb351754fc73e46505f0edfabfd3988802ef771d1b66f2
+  checksum: d8cd5be4f0e89cef04add5b0b068162a086bdb1ca68113ed729e99489b7865ca3edcc6430d6fd20c430e15382929ef5f3c7ec36e6aa7c17be23cac116f92dcff
   languageName: node
   linkType: hard
 
