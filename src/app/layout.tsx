@@ -1,3 +1,4 @@
+'use client';
 import React, { PropsWithChildren } from 'react';
 import { Inter } from 'next/font/google';
 import {
@@ -12,16 +13,20 @@ import {
   ListItemIcon,
   ListItemText,
   Toolbar,
+  ThemeProvider,
   Typography,
 } from '@mui/material';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import MenuIcon from '@mui/icons-material/Menu';
+import './styles/globals.css';
 import { useTheme } from '@mui/material/styles';
+import defaultTheme from './styles/theme';
 
 const drawerWidth = 240;
 
 interface LayoutProps {
   container?: Element;
+  children: React.ReactNode;
 }
 
 const font = Inter({
@@ -30,8 +35,7 @@ const font = Inter({
   display: 'swap',
 });
 
-const Layout = (props: PropsWithChildren<LayoutProps>) => {
-  const { container } = props;
+const Layout = ({ container, children }: PropsWithChildren<LayoutProps>) => {
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -120,18 +124,25 @@ const Layout = (props: PropsWithChildren<LayoutProps>) => {
   );
 
   return (
-    <Box
-      sx={{
-        color: theme.palette.primary.contrastText,
-        display: 'flex',
-        maxHeight: '100vh',
-      }}
-    >
-      <CssBaseline />
-      {appBar}
-      {drawerBox}
-      {props.children}
-    </Box>
+    <html lang="en">
+      <body>
+        <ThemeProvider theme={defaultTheme}>
+          <Box>{children}</Box>
+          <Box
+            sx={{
+              color: theme.palette.primary.contrastText,
+              display: 'flex',
+              maxHeight: '100vh',
+            }}
+          >
+            <CssBaseline />
+            {appBar}
+            {drawerBox}
+            {children}
+          </Box>
+        </ThemeProvider>
+      </body>
+    </html>
   );
 };
 
