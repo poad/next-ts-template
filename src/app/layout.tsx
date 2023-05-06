@@ -1,5 +1,5 @@
 'use client';
-import React, { PropsWithChildren } from 'react';
+import { ReactNode, useState } from 'react';
 import { Inter } from 'next/font/google';
 import {
   AppBar,
@@ -25,8 +25,7 @@ import defaultTheme from './styles/theme';
 const drawerWidth = 240;
 
 interface LayoutProps {
-  container?: Element;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const font = Inter({
@@ -35,9 +34,9 @@ const font = Inter({
   display: 'swap',
 });
 
-const Layout = ({ container, children }: PropsWithChildren<LayoutProps>) => {
+const Layout = ({ children }: LayoutProps) => {
   const theme = useTheme();
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   function handleDrawerToggle() {
     setMobileOpen(!mobileOpen);
@@ -104,7 +103,6 @@ const Layout = ({ container, children }: PropsWithChildren<LayoutProps>) => {
       display="contents"
     >
       <Drawer
-        container={container}
         variant="temporary"
         anchor="left"
         open={mobileOpen}
