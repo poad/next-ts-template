@@ -5610,6 +5610,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minipass@npm:^5.0.0 || ^6.0.0":
+  version: 6.0.0
+  resolution: "minipass@npm:6.0.0"
+  checksum: c408b1224b6e7f7389ac37121883691e8db693bfb36b8a75aeb638443e138af99bec3f145cd55c58467733b0a9cb810bee5c7b130eb9ea52e2e9e179ba663f14
+  languageName: node
+  linkType: hard
+
 "minizlib@npm:^2.1.1, minizlib@npm:^2.1.2":
   version: 2.1.2
   resolution: "minizlib@npm:2.1.2"
@@ -6344,12 +6351,12 @@ __metadata:
   linkType: hard
 
 "path-scurry@npm:^1.7.0":
-  version: 1.8.0
-  resolution: "path-scurry@npm:1.8.0"
+  version: 1.9.1
+  resolution: "path-scurry@npm:1.9.1"
   dependencies:
     lru-cache: ^9.1.1
-    minipass: ^5.0.0
-  checksum: 53974a328e379aa3e22b18bbc97f135522d329597faa924bc99bc95959a21ae07c1aa7747a00c21c3579a5d25af4596ea1ed7f135cafd12ec949e35969a39e3e
+    minipass: ^5.0.0 || ^6.0.0
+  checksum: 28caa788f17cc48e1a16b552bc08ba4ec57345bd18df7b9d58589bd83271e5bf932929467353f53ff66eb3bf056eb28d8f9b379525ee37e3f603169257542694
   languageName: node
   linkType: hard
 
