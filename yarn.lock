@@ -2663,13 +2663,13 @@ __metadata:
   linkType: hard
 
 "@ndelangen/get-tarball@npm:^3.0.7":
-  version: 3.0.7
-  resolution: "@ndelangen/get-tarball@npm:3.0.7"
+  version: 3.0.9
+  resolution: "@ndelangen/get-tarball@npm:3.0.9"
   dependencies:
     gunzip-maybe: ^1.4.2
     pump: ^3.0.0
     tar-fs: ^2.1.1
-  checksum: f0a44392b8a452cb76f0bf80b1392c968bbf1a8535ea502c99ff3615a454140c41c65003771d017d1de73aa7ca969e14c9fbec8b36027dae74d3b0b85888b482
+  checksum: 7fa8ac40b4e85738a4ee6bf891bc27fce2445b65b4477e0ec86aed0fa62ab18bdf5d193ce04553ad9bfa639e1eef33b8b30da4ef3e7218f12bf95f24c8786e5b
   languageName: node
   linkType: hard
 
