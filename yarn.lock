@@ -1415,18 +1415,18 @@ __metadata:
   linkType: hard
 
 "@babel/plugin-transform-runtime@npm:^7.21.0":
-  version: 7.22.0
-  resolution: "@babel/plugin-transform-runtime@npm:7.22.0"
+  version: 7.22.2
+  resolution: "@babel/plugin-transform-runtime@npm:7.22.2"
   dependencies:
     "@babel/helper-module-imports": ^7.21.4
     "@babel/helper-plugin-utils": ^7.21.5
-    babel-plugin-polyfill-corejs2: ^0.4.1
+    babel-plugin-polyfill-corejs2: ^0.4.2
     babel-plugin-polyfill-corejs3: ^0.8.1
     babel-plugin-polyfill-regenerator: ^0.5.0
     semver: ^6.3.0
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 1983da4f87f5cdd58576b909cdf769b64c161b32e79256962dae7f42e041eb5ef839b8e4247c868f2e972485ca3862cef44f99e1d97bbd0626924c91abc35ec1
+  checksum: 1fedc30de67a921edca22505bfb31807b47634e413bb5ee42c194b6c70c32dceab9e4e4d0eaabadda7b45d975bf46cdfc8111c43c090ec8a19b1f722308ba9b1
   languageName: node
   linkType: hard
 
@@ -5542,6 +5542,19 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: f2b9bfec71914899b6e028441db565e1a2f2bc8208738c0fd7093e36fa6232cb803577751a745a0a30484928fcff65b3dad2c124bf9d956c3de19c26a1355a5e
+  languageName: node
+  linkType: hard
+
+"babel-plugin-polyfill-corejs2@npm:^0.4.2":
+  version: 0.4.3
+  resolution: "babel-plugin-polyfill-corejs2@npm:0.4.3"
+  dependencies:
+    "@babel/compat-data": ^7.17.7
+    "@babel/helper-define-polyfill-provider": ^0.4.0
+    semver: ^6.1.1
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 09ba40b9f8ac66a733628b2f12722bb764bdcc4f9600b93d60f1994418a8f84bc4b1ed9ab07c9d288debbf6210413fdff0721a3a43bd89c7f77adf76b0310adc
   languageName: node
   linkType: hard
 
