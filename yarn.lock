@@ -8934,13 +8934,13 @@ __metadata:
   linkType: hard
 
 "glob-promise@npm:^6.0.2":
-  version: 6.0.2
-  resolution: "glob-promise@npm:6.0.2"
+  version: 6.0.3
+  resolution: "glob-promise@npm:6.0.3"
   dependencies:
     "@types/glob": ^8.0.0
   peerDependencies:
     glob: ^8.0.3
-  checksum: 3caa63b052ddcf28d3498a0c93ef623bc43d0fa57487844782b77175c32db1602fd63e4e26091075125083b21eb3e81b4318d5d24139b9b033a764e64b6b3bc3
+  checksum: f8f2d3551445211af80f64f95883a6716e9a99cbb470be329d827e6c0ebc830e64a8c37f07150084217b5cf28b86a8a738c48d8c2664b591951235ded44d8595
   languageName: node
   linkType: hard
 
