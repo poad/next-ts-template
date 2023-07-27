@@ -2233,7 +2233,7 @@ packages:
       graceful-fs: 4.2.11
       jest-haste-map: 29.6.1
       jest-regex-util: 29.4.3
-      jest-util: 29.6.1
+      jest-util: 29.6.2
       micromatch: 4.0.5
       pirates: 4.0.6
       slash: 3.0.0
@@ -7995,7 +7995,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       ansi-escapes: 4.3.2
-      chalk: 4.1.0
+      chalk: 4.1.2
       cli-cursor: 3.1.0
       cli-width: 3.0.0
       external-editor: 3.1.0
@@ -8467,7 +8467,7 @@ packages:
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
       jest-regex-util: 29.4.3
-      jest-util: 29.6.1
+      jest-util: 29.6.2
       jest-worker: 29.6.1
       micromatch: 4.0.5
       walker: 1.0.8
@@ -8481,7 +8481,7 @@ packages:
     dependencies:
       '@jest/types': 29.6.1
       '@types/node': 20.4.5
-      jest-util: 29.6.1
+      jest-util: 29.6.2
     dev: true
 
   /jest-regex-util@29.4.3:
@@ -8489,8 +8489,8 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dev: true
 
-  /jest-util@29.6.1:
-    resolution: {integrity: sha512-NRFCcjc+/uO3ijUVyNOQJluf8PtGCe/W6cix36+M3cTFgiYqFOOW5MgN4JOOcvbUhcKTYVd1CvHz/LWi8d16Mg==}
+  /jest-util@29.6.2:
+    resolution: {integrity: sha512-3eX1qb6L88lJNCFlEADKOkjpXJQyZRiavX1INZ4tRnrBVr2COd3RgcTLyUiEXMNBlDU/cgYq6taUS0fExrWW4w==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.6.1
@@ -8515,7 +8515,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@types/node': 20.4.5
-      jest-util: 29.6.1
+      jest-util: 29.6.2
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: true
