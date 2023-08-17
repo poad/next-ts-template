@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@microsoft/eslint-formatter-sarif": "^3.0.0",
-    "@next/bundle-analyzer": "^13.4.16",
+    "@next/bundle-analyzer": "^13.4.17",
     "@next/codemod": "^13.4.16",
     "@storybook/addon-essentials": "^7.3.1",
     "@storybook/addon-interactions": "^7.3.1",
