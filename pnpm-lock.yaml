@@ -1714,8 +1714,8 @@ packages:
   '@storybook/csf@0.0.1':
     resolution: {integrity: sha512-USTLkZze5gkel8MYCujSRBVIrUQ3YPBrLOx7GNk/0wttvVtlzWXAq9eLbQ4p/NicGxP+3T7KPEMVV//g+yubpw==}
 
-  '@storybook/csf@0.1.4':
-    resolution: {integrity: sha512-B9UI/lsQMjF+oEfZCI6YXNoeuBcGZoOP5x8yKbe2tIEmsMjSztFKkpPzi5nLCnBk/MBtl6QJeI3ksJnbsWPkOw==}
+  '@storybook/csf@0.1.5':
+    resolution: {integrity: sha512-pW7Dtk/bE2JGrAe/KuBY4Io02NBe/2CLP2DkgVgWlSwvEVdm/rbQyiwy8RaL0lQlJCv9CsGBY+n9HQG8d4bZjQ==}
 
   '@storybook/docs-mdx@3.0.0':
     resolution: {integrity: sha512-NmiGXl2HU33zpwTv1XORe9XG9H+dRUC1Jl11u92L4xr062pZtrShLmD4VKIsOQujxhhOrbxpwhNOt+6TdhyIdQ==}
@@ -7561,7 +7561,7 @@ snapshots:
 
   '@storybook/addon-links@8.0.9(react@18.3.0)':
     dependencies:
-      '@storybook/csf': 0.1.4
+      '@storybook/csf': 0.1.5
       '@storybook/global': 5.0.0
       ts-dedent: 2.2.0
     optionalDependencies:
@@ -7600,7 +7600,7 @@ snapshots:
       '@storybook/client-logger': 8.0.9
       '@storybook/components': 8.0.9(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/core-events': 8.0.9
-      '@storybook/csf': 0.1.4
+      '@storybook/csf': 0.1.5
       '@storybook/docs-tools': 8.0.9
       '@storybook/global': 5.0.0
       '@storybook/icons': 1.2.9(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
@@ -7759,7 +7759,7 @@ snapshots:
       '@babel/core': 7.24.4
       '@babel/preset-env': 7.24.4(@babel/core@7.24.4)
       '@babel/types': 7.24.0
-      '@storybook/csf': 0.1.4
+      '@storybook/csf': 0.1.5
       '@storybook/csf-tools': 8.0.9
       '@storybook/node-logger': 8.0.9
       '@storybook/types': 8.0.9
@@ -7778,7 +7778,7 @@ snapshots:
     dependencies:
       '@radix-ui/react-slot': 1.0.2(@types/react@18.3.0)(react@18.3.0)
       '@storybook/client-logger': 8.0.9
-      '@storybook/csf': 0.1.4
+      '@storybook/csf': 0.1.5
       '@storybook/global': 5.0.0
       '@storybook/icons': 1.2.9(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/theming': 8.0.9(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
@@ -7837,7 +7837,7 @@ snapshots:
       '@storybook/channels': 8.0.9
       '@storybook/core-common': 8.0.9
       '@storybook/core-events': 8.0.9
-      '@storybook/csf': 0.1.4
+      '@storybook/csf': 0.1.5
       '@storybook/csf-tools': 8.0.9
       '@storybook/docs-mdx': 3.0.0
       '@storybook/global': 5.0.0
@@ -7905,7 +7905,7 @@ snapshots:
       '@babel/parser': 7.24.4
       '@babel/traverse': 7.24.1
       '@babel/types': 7.24.0
-      '@storybook/csf': 0.1.4
+      '@storybook/csf': 0.1.5
       '@storybook/types': 8.0.9
       fs-extra: 11.2.0
       recast: 0.23.6
@@ -7917,7 +7917,7 @@ snapshots:
     dependencies:
       lodash: 4.17.21
 
-  '@storybook/csf@0.1.4':
+  '@storybook/csf@0.1.5':
     dependencies:
       type-fest: 2.19.0
 
@@ -7959,7 +7959,7 @@ snapshots:
       '@storybook/channels': 8.0.9
       '@storybook/client-logger': 8.0.9
       '@storybook/core-events': 8.0.9
-      '@storybook/csf': 0.1.4
+      '@storybook/csf': 0.1.5
       '@storybook/global': 5.0.0
       '@storybook/icons': 1.2.9(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
       '@storybook/router': 8.0.9
@@ -8086,7 +8086,7 @@ snapshots:
       '@storybook/channels': 8.0.9
       '@storybook/client-logger': 8.0.9
       '@storybook/core-events': 8.0.9
-      '@storybook/csf': 0.1.4
+      '@storybook/csf': 0.1.5
       '@storybook/global': 5.0.0
       '@storybook/types': 8.0.9
       '@types/qs': 6.9.15
