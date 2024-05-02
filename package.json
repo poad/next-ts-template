@@ -24,8 +24,8 @@
     "@emotion/react": "^11.11.4",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.5",
-    "@mui/icons-material": "^5.15.15",
-    "@mui/material": "^5.15.15",
+    "@mui/icons-material": "^5.15.16",
+    "@mui/material": "^5.15.16",
     "@mui/x-date-pickers": "^7.3.1",
     "material-react-table": "^2.13.0",
     "next": "^14.2.3",
@@ -48,7 +48,7 @@
     "@storybook/nextjs": "^8.0.9",
     "@storybook/react": "^8.0.9",
     "@storybook/testing-library": "^0.2.2",
-    "@types/node": "^20.12.7",
+    "@types/node": "^20.12.8",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
@@ -84,5 +84,6 @@
   },
   "msw": {
     "workerDirectory": ".storybook/public"
-  }
+  },
+  "packageManager": "pnpm@9.0.6+sha512.f6d863130973207cb7a336d6b439a242a26ac8068077df530d6a86069419853dc1ffe64029ec594a9c505a3a410d19643c870aba6776330f5cfddcf10a9c1617"
 }
