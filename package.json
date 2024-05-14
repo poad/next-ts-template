@@ -48,7 +48,7 @@
     "@storybook/nextjs": "^8.0.10",
     "@storybook/react": "^8.0.10",
     "@storybook/testing-library": "^0.2.2",
-    "@types/node": "^20.12.11",
+    "@types/node": "^20.12.12",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
@@ -75,7 +75,7 @@
     "storybook": "^8.0.10",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.8.0"
+    "typescript-eslint": "^7.9.0"
   },
   "engines": {
     "npm": "use pnpm please!",
