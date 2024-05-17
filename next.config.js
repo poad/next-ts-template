@@ -5,7 +5,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 /** @type {import('next').NextConfig} */
 const config = {
   output: 'export',
-  reactStrictMode: true,
   swcMinify: true,
   cleanDistDir: true,
   images: {
