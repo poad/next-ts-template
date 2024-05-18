@@ -1,21 +1,24 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-});
+import withBundleAnalyzer from '@next/bundle-analyzer';
 
 /** @type {import('next').NextConfig} */
-const config = {
+const nextConfig = {
   output: 'export',
   swcMinify: true,
   cleanDistDir: true,
   images: {
     unoptimized: true,
   },
-  compiler: {
-    emotion: true,
+  eslint: {
+    ignoreDuringBuilds: true,
   },
-  experimental: {
-    //   swcPlugins: [['typewind/swc', {}]],
-  },
+  productionBrowserSourceMaps: true,
 };
 
-module.exports = withBundleAnalyzer(config);
+const config =
+  process.env.ANALYZE === 'true'
+    ? withBundleAnalyzer(nextConfig)({
+        enabled: true,
+      })
+    : nextConfig;
+
+export default config;

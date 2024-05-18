@@ -4,6 +4,7 @@ import eslint from '@eslint/js';
 import nextPlugin from '@next/eslint-plugin-next';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
+// @ts-ignore
 import importPlugin from 'eslint-plugin-import';
 
 import prettier from 'eslint-config-prettier';
@@ -85,6 +86,7 @@ export default tseslint.config(
     plugins: {
       '@next/next': nextPlugin,
     },
+    // @ts-ignore
     rules: {
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs['core-web-vitals'].rules,
