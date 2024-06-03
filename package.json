@@ -76,7 +76,7 @@
     "rimraf": "^5.0.7",
     "storybook": "^8.1.5",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.11.0"
+    "typescript-eslint": "^7.12.0"
   },
   "engines": {
     "npm": "use pnpm please!",
