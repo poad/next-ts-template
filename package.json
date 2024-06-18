@@ -39,24 +39,24 @@
     "web-vitals": "^3.5.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.4.0",
+    "@eslint/js": "^9.5.0",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "@next/bundle-analyzer": "^14.2.4",
-    "@storybook/addon-essentials": "^8.1.9",
-    "@storybook/addon-interactions": "^8.1.9",
-    "@storybook/addon-links": "^8.1.9",
-    "@storybook/addon-onboarding": "^8.1.9",
+    "@storybook/addon-essentials": "^8.1.10",
+    "@storybook/addon-interactions": "^8.1.10",
+    "@storybook/addon-links": "^8.1.10",
+    "@storybook/addon-onboarding": "^8.1.10",
     "@storybook/addon-styling-webpack": "^1.0.0",
-    "@storybook/addon-themes": "^8.1.9",
-    "@storybook/blocks": "^8.1.9",
-    "@storybook/nextjs": "^8.1.9",
-    "@storybook/react": "^8.1.9",
-    "@storybook/test": "^8.1.9",
-    "@types/node": "^20.14.2",
+    "@storybook/addon-themes": "^8.1.10",
+    "@storybook/blocks": "^8.1.10",
+    "@storybook/nextjs": "^8.1.10",
+    "@storybook/react": "^8.1.10",
+    "@storybook/test": "^8.1.10",
+    "@types/node": "^20.14.4",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "cross-env": "^7.0.3",
-    "eslint": "^9.4.0",
+    "eslint": "^9.5.0",
     "eslint-config-import": "^0.13.0",
     "eslint-config-next": "^14.2.4",
     "eslint-config-prettier": "^9.1.0",
@@ -74,9 +74,9 @@
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.5.14",
     "rimraf": "^5.0.7",
-    "storybook": "^8.1.9",
+    "storybook": "^8.1.10",
     "typescript": "^5.4.5",
-    "typescript-eslint": "^7.13.0"
+    "typescript-eslint": "^7.13.1"
   },
   "engines": {
     "npm": "use pnpm please!",
@@ -86,5 +86,5 @@
   "msw": {
     "workerDirectory": ".storybook/public"
   },
-  "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631"
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a"
 }
