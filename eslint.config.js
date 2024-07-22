@@ -6,8 +6,10 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 // @ts-ignore
 import importPlugin from 'eslint-plugin-import';
+import stylistic from '@stylistic/eslint-plugin';
+import stylisticTs from '@stylistic/eslint-plugin-ts';
+import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 
-import prettier from 'eslint-config-prettier';
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
 
@@ -31,7 +33,8 @@ export default tseslint.config(
     files: ['src/**/*.{jsx,ts,tsx}'],
   },
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
   ...compat.config({
     extends: ['plugin:storybook/recommended'],
     ignorePatterns: ['!.storybook', 'storybook-static'],
@@ -96,9 +99,17 @@ export default tseslint.config(
     },
   },
   {
-    files: ['src/**/*.{js,jsx,ts,tsx}'],
+    plugins: {
+      '@stylistic': stylistic,
+      '@stylistic/ts': stylisticTs,
+      '@stylistic/jsx': stylisticJsx,
+    },
     rules: {
-      ...prettier.rules,
+      '@stylistic/semi': 'error',
+      '@stylistic/ts/indent': ['error', 2],
+      '@stylistic/jsx/jsx-indent': ['error', 2],
+      'comma-dangle': ['error', 'always'],
+      'arrow-parens': ['error', 'always'],
     },
   },
   {

@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode, useState } from 'react';
+import { ReactNode, useState, } from 'react';
 import {
   AppBar,
   Box,
@@ -13,7 +13,7 @@ import {
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
-import { useTheme } from '@mui/material/styles';
+import { useTheme, } from '@mui/material/styles';
 import defaultTheme from './styles/theme';
 import MenuDrawer from 'src/components/MenuDrawer';
 import StyledJsxRegistry from './registry';
@@ -25,24 +25,24 @@ interface LayoutProps {
   children: ReactNode;
 }
 
-export default function Layout({ children }: LayoutProps): JSX.Element {
+export default function Layout({ children, }: LayoutProps,): JSX.Element {
   const theme = useTheme();
-  const [open, setOpen] = useState(false);
+  const [open, setOpen,] = useState(false,);
 
   function handleDrawerToggle() {
-    setOpen(!open);
+    setOpen(!open,);
   }
 
   const menuItems = [
     {
       text: 'Home',
-      icon: <HomeIcon sx={{ color: theme.palette.primary.contrastText }} />,
+      icon: <HomeIcon sx={{ color: theme.palette.primary.contrastText, }} />,
       link: '/',
     },
     {
       text: 'Info',
       icon: (
-        <DashboardIcon sx={{ color: theme.palette.primary.contrastText }} />
+        <DashboardIcon sx={{ color: theme.palette.primary.contrastText, }} />
       ),
     },
     // {
@@ -64,7 +64,7 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
                 maxHeight: '100vh',
               }}
             >
-              <AppBar position="fixed" sx={{ width: '100%' }}>
+              <AppBar position="fixed" sx={{ width: '100%', }}>
                 <Toolbar>
                   <IconButton
                     color="inherit"
@@ -83,7 +83,7 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
                 open={open}
                 onClose={handleDrawerToggle}
               />
-              <Box sx={{ marginTop: '4rem', height: '100vh' }}>{children}</Box>
+              <Box sx={{ marginTop: '4rem', height: '100vh', }}>{children}</Box>
             </Box>
             <CssBaseline />
           </ThemeProvider>

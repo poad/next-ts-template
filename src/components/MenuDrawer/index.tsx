@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, } from 'react';
 import {
   Box,
   Divider,
@@ -10,7 +10,7 @@ import {
   ListItemText,
   useTheme,
 } from '@mui/material';
-import { Inter } from 'next/font/google';
+import { Inter, } from 'next/font/google';
 
 interface MenuItemProps {
   text: string;
@@ -20,9 +20,9 @@ interface MenuItemProps {
 
 const font = Inter({
   weight: '400',
-  subsets: ['latin-ext'],
+  subsets: ['latin-ext',],
   display: 'swap',
-});
+},);
 
 type Width = (string & object) | number;
 
@@ -32,7 +32,7 @@ function MenuItemContent({
 }: {
   text: string;
   icon?: ReactNode;
-}): JSX.Element {
+},): JSX.Element {
   if (icon) {
     return (
       <>
@@ -54,7 +54,7 @@ function MenuItem({
   width: Width;
   icon?: ReactNode;
   link?: string;
-}): JSX.Element {
+},): JSX.Element {
   const theme = useTheme();
   const sx = {
     width,
@@ -85,14 +85,14 @@ export default function MenuDrawer({
   width: Width;
   open: boolean;
   onClose: () => void;
-}): JSX.Element {
+},): JSX.Element {
   const theme = useTheme();
 
   return (
     <Box
       component="nav"
       textAlign="center"
-      sx={{ width: { sm: width }, flexShrink: { sm: 0 } }}
+      sx={{ width: { sm: width, }, flexShrink: { sm: 0, }, }}
       aria-label="folders"
       display="contents"
     >
@@ -108,7 +108,7 @@ export default function MenuDrawer({
             width,
           },
         }}
-        ModalProps={{ keepMounted: true }}
+        ModalProps={{ keepMounted: true, }}
       >
         <Box
           sx={{
@@ -121,7 +121,7 @@ export default function MenuDrawer({
           <Box sx={theme.mixins.toolbar} />
           <Divider />
           <List>
-            {items.map(({ text, icon, link }: MenuItemProps) => (
+            {items.map(({ text, icon, link, }: MenuItemProps,) => (
               <MenuItem
                 key={text}
                 width={width}
@@ -129,7 +129,7 @@ export default function MenuDrawer({
                 icon={icon}
                 link={link}
               />
-            ))}
+            ),)}
           </List>
         </Box>
       </Drawer>
