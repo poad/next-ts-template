@@ -20,7 +20,7 @@
     "analyze": "cross-env ANALYZE=true pnpm build"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.0",
+    "@emotion/react": "^11.13.3",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.7",
@@ -54,8 +54,8 @@
     "@stylistic/eslint-plugin-js": "^2.6.4",
     "@stylistic/eslint-plugin-plus": "^2.6.4",
     "@stylistic/eslint-plugin-ts": "^2.6.4",
-    "@types/node": "^20.14.15",
-    "@types/react": "^18.3.3",
+    "@types/node": "^20.16.1",
+    "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "cross-env": "^7.0.3",
     "eslint": "^9.9.0",
