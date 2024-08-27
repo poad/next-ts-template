@@ -61,7 +61,6 @@
     "eslint": "^9.9.1",
     "eslint-config-import": "^0.13.0",
     "eslint-config-next": "^14.2.7",
-    "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jest": "^27.9.0",
@@ -74,7 +73,7 @@
     "rimraf": "^5.0.10",
     "storybook": "^8.2.9",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^7.18.0"
+    "typescript-eslint": "^8.3.0"
   },
   "engines": {
     "npm": "use pnpm please!",
