@@ -1,13 +1,13 @@
 'use client';
-import React, { useState, useMemo, } from 'react';
-import { Box, Typography, TextField, } from '@mui/material';
+import React, { useState, useMemo } from 'react';
+import { Box, Typography, TextField } from '@mui/material';
 import Image from 'next/image';
 
-import { MaterialReactTable, } from 'material-react-table';
-import type { MRT_ColumnDef, } from 'material-react-table';
+import { MaterialReactTable } from 'material-react-table';
+import type { MRT_ColumnDef } from 'material-react-table';
 
 import styles from './styles/Home.module.css';
-import { Inter, } from 'next/font/google';
+import { Inter } from 'next/font/google';
 
 interface Code {
   hashCode?: number;
@@ -16,13 +16,13 @@ interface Code {
 
 const inter = Inter({
   weight: '400',
-  subsets: ['latin-ext',],
+  subsets: ['latin-ext'],
   display: 'swap',
-},);
+});
 
-function range(start: number, end: number, step = 1,): readonly number[] {
-  return Array.apply(0, Array(end,),).map(
-    (_element, index,) => index * step + start,
+function range(start: number, end: number, step = 1): readonly number[] {
+  return Array.apply(0, Array(end)).map(
+    (_element, index) => index * step + start,
   );
 }
 
@@ -31,23 +31,23 @@ function range(start: number, end: number, step = 1,): readonly number[] {
  * @param s 文字列
  * @returns ハッシュ値
  */
-function hashCode(s: string,) {
-  return s.split('',).reduce(function (a, b,) {
-    a = (a << 5) - a + b.charCodeAt(0,);
+function hashCode(s: string) {
+  return s.split('').reduce(function (a, b) {
+    a = (a << 5) - a + b.charCodeAt(0);
     return a & a;
-  }, 0,);
+  }, 0);
 }
 /**
  * 文字列のハッシュ値からカラーコードを生成して返します。
  * @param string 文字列
  * @returns カラーコード
  */
-function stringToColor(string: string,) {
-  const hash = hashCode(string,);
+function stringToColor(string: string) {
+  const hash = hashCode(string);
 
-  const color = range(0, 3,)
-    .map((i,) => `00${((hash >> (i * 8)) & 0xff).toString(16,)}`.slice(-2,),)
-    .reduce((acc, cur,) => `${acc}${cur}`,);
+  const color = range(0, 3)
+    .map((i) => `00${((hash >> (i * 8)) & 0xff).toString(16)}`.slice(-2))
+    .reduce((acc, cur) => `${acc}${cur}`);
   return `#${color}`;
 }
 
@@ -63,19 +63,19 @@ export default function Home(): JSX.Element {
         accessorKey: 'colorCode',
         Cell: ({
           row: {
-            original: { colorCode, },
+            original: { colorCode },
           },
-        },) => colorCode ?? <Box sx={{ color: colorCode, }}>{colorCode}</Box>,
+        }) => colorCode ?? <Box sx={{ color: colorCode }}>{colorCode}</Box>,
       },
     ],
     [],
   );
 
-  const [data, setData,] = useState<Code>({},);
+  const [data, setData] = useState<Code>({});
   return (
     <Box
       component="main"
-      sx={{ width: '100%', color: '#333', }}
+      sx={{ width: '100%', color: '#333' }}
       className={styles.main}
     >
       <Box className={styles.description}>
@@ -173,24 +173,24 @@ export default function Home(): JSX.Element {
       </Box>
       <TextField
         placeholder="input text"
-        onChange={(event: React.ChangeEvent<HTMLInputElement>,) => {
+        onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
           setData({
-            hashCode: hashCode(event.target.value,),
-            colorCode: stringToColor(event.target.value,),
-          },);
+            hashCode: hashCode(event.target.value),
+            colorCode: stringToColor(event.target.value),
+          });
         }}
       />
 
       <MaterialReactTable
         columns={columns}
-        data={[data,]}
+        data={[data]}
         enableColumnActions={false}
         enableColumnFilters={false}
         enablePagination={false}
         enableSorting={false}
         enableBottomToolbar={false}
         enableTopToolbar={false}
-        muiTableBodyRowProps={{ hover: false, }}
+        muiTableBodyRowProps={{ hover: false }}
       />
     </Box>
   );
