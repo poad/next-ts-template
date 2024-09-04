@@ -44,6 +44,7 @@ export default tseslint.config(
       '@stylistic/jsx': stylisticJsx,
     },
     extends: [
+      // @ts-ignore
       ...compat.config(reactHooksPlugin.configs.recommended),
       ...compat.config(jsxA11yPlugin.configs.recommended),
     ],
