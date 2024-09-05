@@ -7,6 +7,7 @@ import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import stylistic from '@stylistic/eslint-plugin';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
 import stylisticJsx from '@stylistic/eslint-plugin-jsx';
+// import importPlugin from 'eslint-plugin-import';
 
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
@@ -30,12 +31,17 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
+  // importPlugin.flatConfigs.recommended,
   ...compat.config({
     extends: ['plugin:storybook/recommended'],
     ignorePatterns: ['!.storybook', 'storybook-static'],
   }),
   {
     files: ['src/**/*.{jsx,tsx}'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+    },
     plugins: {
       'jsx-a11y': jsxA11yPlugin,
       '@next/next': nextPlugin,
@@ -68,6 +74,8 @@ export default tseslint.config(
       '@next/next/no-duplicate-head': 'off',
       '@next/next/no-img-element': 'error',
       '@next/next/no-page-custom-font': 'off',
+      // 'import/no-dynamic-require': 'warn',
+      // 'import/no-nodejs-modules': 'warn',
       '@stylistic/semi': 'error',
       '@stylistic/ts/indent': ['error', 2],
       '@stylistic/jsx/jsx-indent': ['error', 2],
