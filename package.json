@@ -61,6 +61,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^9.9.1",
     "eslint-config-next": "^14.2.8",
+    "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.30.0",
     "eslint-plugin-jsx-a11y": "^6.10.0",

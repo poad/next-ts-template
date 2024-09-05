@@ -7,7 +7,7 @@ import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import stylistic from '@stylistic/eslint-plugin';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
 import stylisticJsx from '@stylistic/eslint-plugin-jsx';
-// import importPlugin from 'eslint-plugin-import';
+import importPlugin from 'eslint-plugin-import';
 
 import tseslint from 'typescript-eslint';
 import { FlatCompat } from '@eslint/eslintrc';
@@ -31,14 +31,16 @@ export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
-  // importPlugin.flatConfigs.recommended,
   ...compat.config({
     extends: ['plugin:storybook/recommended'],
     ignorePatterns: ['!.storybook', 'storybook-static'],
   }),
   {
     files: ['src/**/*.{jsx,tsx}'],
+    ...importPlugin.flatConfigs.recommended,
+    ...importPlugin.flatConfigs.typescript,
     languageOptions: {
+      parser: tseslint.parser,
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
@@ -64,7 +66,8 @@ export default tseslint.config(
         { name: 'NavLink', linkAttribute: 'to' },
       ],
       'import/resolver': {
-        typescript: {},
+        typescript: true,
+        node: true,
       },
     },
     // @ts-ignore
