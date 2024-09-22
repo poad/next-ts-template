@@ -37,7 +37,7 @@
     "web-vitals": "^3.5.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.10.0",
+    "@eslint/js": "^9.11.0",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "@next/bundle-analyzer": "^14.2.13",
     "@storybook/addon-essentials": "^8.3.2",
@@ -59,7 +59,7 @@
     "@types/react": "^18.3.8",
     "@types/react-dom": "^18.3.0",
     "cross-env": "^7.0.3",
-    "eslint": "^9.10.0",
+    "eslint": "^9.11.0",
     "eslint-config-next": "^14.2.13",
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-flowtype": "^8.0.3",
