@@ -50,10 +50,10 @@ export default tseslint.config(
       '@stylistic': stylistic,
       '@stylistic/ts': stylisticTs,
       '@stylistic/jsx': stylisticJsx,
+      'react-hooks': reactHooksPlugin,
     },
     extends: [
       // @ts-ignore
-      ...compat.config(reactHooksPlugin.configs.recommended),
       ...compat.config(jsxA11yPlugin.configs.recommended),
     ],
     settings: {
@@ -74,11 +74,10 @@ export default tseslint.config(
     rules: {
       ...nextPlugin.configs.recommended.rules,
       ...nextPlugin.configs['core-web-vitals'].rules,
+      ...reactHooksPlugin.configs.recommended.rules,
       '@next/next/no-duplicate-head': 'off',
       '@next/next/no-img-element': 'error',
       '@next/next/no-page-custom-font': 'off',
-      // 'import/no-dynamic-require': 'warn',
-      // 'import/no-nodejs-modules': 'warn',
       '@stylistic/semi': 'error',
       '@stylistic/ts/indent': ['error', 2],
       '@stylistic/jsx/jsx-indent': ['error', 2],
