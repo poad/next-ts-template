@@ -15,7 +15,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import { useTheme } from '@mui/material/styles';
 import defaultTheme from './styles/theme';
-import MenuDrawer from 'src/components/MenuDrawer';
+import MenuDrawer from '../features/ui/MenuDrawer/components';
 import StyledJsxRegistry from './registry';
 import './globals.css';
 
@@ -45,11 +45,6 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
         <DashboardIcon sx={{ color: theme.palette.primary.contrastText }} />
       ),
     },
-    // {
-    //   text: 'Test',
-    //   // not working. https://github.com/vercel/next.js/issues/54393
-    //   link: '/test/info',
-    // },
   ];
 
   return (

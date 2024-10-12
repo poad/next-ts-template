@@ -8,6 +8,7 @@ import type { MRT_ColumnDef } from 'material-react-table';
 
 import styles from './styles/Home.module.css';
 import { Inter } from 'next/font/google';
+import { Show } from 'src/features/flow';
 
 interface Code {
   hashCode?: number;
@@ -181,17 +182,19 @@ export default function Home(): JSX.Element {
         }}
       />
 
-      <MaterialReactTable
-        columns={columns}
-        data={[data]}
-        enableColumnActions={false}
-        enableColumnFilters={false}
-        enablePagination={false}
-        enableSorting={false}
-        enableBottomToolbar={false}
-        enableTopToolbar={false}
-        muiTableBodyRowProps={{ hover: false }}
-      />
+      <Show when={data.hashCode}>
+        <MaterialReactTable
+          columns={columns}
+          data={[data]}
+          enableColumnActions={false}
+          enableColumnFilters={false}
+          enablePagination={false}
+          enableSorting={false}
+          enableBottomToolbar={false}
+          enableTopToolbar={false}
+          muiTableBodyRowProps={{ hover: false }}
+        />
+      </Show>
     </Box>
   );
 }

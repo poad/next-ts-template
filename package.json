@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev --turbo --show-all",
+    "dev": "next dev --turbo",
     "build": "next build",
     "start": "pnpm dlx serve@latest out",
     "eslint:check": "eslint",
