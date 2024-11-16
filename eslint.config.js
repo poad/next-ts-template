@@ -36,7 +36,7 @@ export default tseslint.config(
     ignorePatterns: ['!.storybook', 'storybook-static'],
   }),
   {
-    files: ['src/**/*.{jsx,tsx}'],
+    files: ['src/**/*.{ts,tsx}'],
     ...importPlugin.flatConfigs.recommended,
     ...importPlugin.flatConfigs.typescript,
     languageOptions: {
@@ -85,6 +85,8 @@ export default tseslint.config(
       'arrow-parens': ['error', 'always'],
       semi: ['error', 'always'],
       quotes: ['error', 'single'],
+      '@typescript-eslint/no-unused-expressions': 'off',
+      '@typescript-eslint/no-empty-function': 'off',
     },
   },
 );
