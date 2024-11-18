@@ -67,7 +67,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-storybook": "^0.11.0",
     "msw": "^2.6.5",
     "msw-storybook-addon": "^2.0.4",
     "rimraf": "^5.0.10",
