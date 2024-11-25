@@ -1,7 +1,7 @@
 export function Show<T>(props: {
   when: T | undefined | null | false
   fallback?: JSX.Element
-  children: JSX.Element | ((item: T) => JSX.Element)
+  children: JSX.Element
 }): JSX.Element {
   if (props.when) {
     return (
