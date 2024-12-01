@@ -25,7 +25,7 @@
     "@mui/icons-material": "^6.1.9",
     "@mui/material": "^6.1.9",
     "@mui/material-nextjs": "^6.1.9",
-    "@mui/x-date-pickers": "^7.22.3",
+    "@mui/x-date-pickers": "^7.23.0",
     "autoprefixer": "^10.4.20",
     "material-react-table": "^3.0.1",
     "next": "^15.0.3",
@@ -37,7 +37,7 @@
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
-    "@eslint/js": "^9.15.0",
+    "@eslint/js": "^9.16.0",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "@next/bundle-analyzer": "^15.0.3",
     "@storybook/addon-essentials": "^8.4.6",
@@ -59,7 +59,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "cross-env": "^7.0.3",
-    "eslint": "^9.15.0",
+    "eslint": "^9.16.0",
     "eslint-config-next": "^15.0.3",
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-flowtype": "^8.0.3",
@@ -83,5 +83,5 @@
   "msw": {
     "workerDirectory": ".storybook/public"
   },
-  "packageManager": "pnpm@9.14.3+sha512.c0f53ee99477ed969b82b289ad011a5d16bf1623c957e7f29eabe8d0c00b574c29b8c7f54f6c67ee710c73f285c8154d07ce44b46fe2c0eeb476a90441bac371"
+  "packageManager": "pnpm@9.14.4+sha512.c8180b3fbe4e4bca02c94234717896b5529740a6cbadf19fa78254270403ea2f27d4e1d46a08a0f56c89b63dc8ebfd3ee53326da720273794e6200fcf0d184ab"
 }
