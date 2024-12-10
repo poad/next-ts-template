@@ -3473,8 +3473,8 @@ packages:
     resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
     hasBin: true
 
-  magic-string@0.30.14:
-    resolution: {integrity: sha512-5c99P1WKTed11ZC0HMJOj6CDIue6F8ySu+bJL+85q1zBEIY8IklrJ1eiKC2NDRh3Ct3FcvmJPyQHb9erXMTJNw==}
+  magic-string@0.30.15:
+    resolution: {integrity: sha512-zXeaYRgZ6ldS1RJJUrMrYgNJ4fdwnyI6tVqoiIhyCyv5IVTK9BU8Ic2l253GGETQHxI4HNUwhJ3fjDhKqEoaAw==}
 
   make-dir@3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
@@ -3632,8 +3632,8 @@ packages:
     peerDependencies:
       webpack: '>=5'
 
-  node-releases@2.0.18:
-    resolution: {integrity: sha512-d9VeXT4SJ7ZeOqGX6R5EM022wpL+eWPooLI+5UpWn2jCT1aosUQEhQP214x33Wkwx3JQMvIm+tIoVOdodFS40g==}
+  node-releases@2.0.19:
+    resolution: {integrity: sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw==}
 
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -6340,7 +6340,7 @@ snapshots:
       es-module-lexer: 1.5.4
       fork-ts-checker-webpack-plugin: 8.0.0(typescript@5.7.2)(webpack@5.97.1(esbuild@0.24.0))
       html-webpack-plugin: 5.6.3(webpack@5.97.1(esbuild@0.24.0))
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       path-browserify: 1.0.1
       process: 0.11.10
       semver: 7.6.3
@@ -6502,7 +6502,7 @@ snapshots:
       '@types/node': 22.10.1
       '@types/semver': 7.5.8
       find-up: 5.0.0
-      magic-string: 0.30.14
+      magic-string: 0.30.15
       react: 19.0.0
       react-docgen: 7.1.0
       react-dom: 19.0.0(react@19.0.0)
@@ -7250,7 +7250,7 @@ snapshots:
     dependencies:
       caniuse-lite: 1.0.30001687
       electron-to-chromium: 1.5.72
-      node-releases: 2.0.18
+      node-releases: 2.0.19
       update-browserslist-db: 1.1.1(browserslist@4.24.2)
 
   buffer-from@0.1.2: {}
@@ -8714,7 +8714,7 @@ snapshots:
 
   lz-string@1.5.0: {}
 
-  magic-string@0.30.14:
+  magic-string@0.30.15:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
 
@@ -8908,7 +8908,7 @@ snapshots:
       vm-browserify: 1.1.2
       webpack: 5.97.1(esbuild@0.24.0)
 
-  node-releases@2.0.18: {}
+  node-releases@2.0.19: {}
 
   normalize-path@3.0.0: {}
 
