@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useMemo } from 'react';
+import React, { JSX, useState, useMemo } from 'react';
 import { Box, Typography, TextField } from '@mui/material';
 import Image from 'next/image';
 

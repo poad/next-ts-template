@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 export function Show<T>(props: {
   when: T | undefined | null | false
   fallback?: JSX.Element

@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 export function Switch(props: {
   fallback?: JSX.Element
   children: JSX.Element

@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 interface MatchProps<T> {
   when: T | undefined | null | false
   children: JSX.Element
