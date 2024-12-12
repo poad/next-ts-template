@@ -9,6 +9,10 @@ updates:
     rebase-strategy: auto
     assignees:
       - poad
+    groups:
+      actions:
+        patterns:
+          - '*'
 
   - package-ecosystem: npm
     directory: '/'
@@ -21,58 +25,6 @@ updates:
     assignees:
       - poad
     groups:
-      nextjs:
-        patterns:
-          - 'next'
-          - '@next/*'
-          - 'eslint-config-next'
-      eslint-prettier:
-        patterns:
-          - '@typescript-eslint/*'
-          - 'eslint'
-          - 'eslint-*'
-          - 'prettier'
-        exclude-patterns:
-          - 'eslint-config-next'
-          - 'eslint-plugin-storybook'
-      storybook-msw:
-        patterns:
-          - '@storybook/*'
-          - 'storybook'
-          - 'eslint-plugin-storybook'
-          - 'msw'
-          - 'msw-storybook-addon'
-      react:
-        patterns:
-          - '@types/react*'
-          - 'react*'
-      mui-emotion:
-        patterns:
-          - '@emotion/*'
-          - '@mui/*'
-      tailwindcss:
-        patterns:
-          - 'autoprefixer'
-          - 'postcss'
-          - 'tailwindcss'
-      misc:
+      npm:
         patterns:
           - '*'
-        exclude-patterns:
-          - 'next'
-          - '@next/*'
-          - '@typescript-eslint/*'
-          - 'eslint'
-          - 'eslint-*'
-          - 'prettier'
-          - '@storybook/*'
-          - 'storybook'
-          - 'msw'
-          - 'msw-storybook-addon'
-          - '@types/react*'
-          - 'react*'
-          - '@emotion/*'
-          - '@mui/*'
-          - 'autoprefixer'
-          - 'postcss'
-          - 'tailwindcss'
