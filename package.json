@@ -27,7 +27,7 @@
     "@mui/material-nextjs": "^6.2.0",
     "@mui/x-date-pickers": "^7.23.2",
     "autoprefixer": "^10.4.20",
-    "material-react-table": "^3.0.2",
+    "material-react-table": "^3.0.3",
     "next": "^15.1.0",
     "postcss": "^8.4.49",
     "react": "^19.0.0",
@@ -37,7 +37,7 @@
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
-    "@eslint/js": "^9.16.0",
+    "@eslint/js": "^9.17.0",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "@next/bundle-analyzer": "^15.1.0",
     "@storybook/addon-essentials": "^8.4.7",
@@ -59,7 +59,7 @@
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.2",
     "cross-env": "^7.0.3",
-    "eslint": "^9.16.0",
+    "eslint": "^9.17.0",
     "eslint-config-next": "^15.1.0",
     "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-flowtype": "^8.0.3",
@@ -68,12 +68,12 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-storybook": "^0.11.1",
-    "msw": "^2.6.8",
+    "msw": "^2.7.0",
     "msw-storybook-addon": "^2.0.4",
     "rimraf": "^6.0.1",
     "storybook": "^8.4.7",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.18.0"
+    "typescript-eslint": "^8.18.1"
   },
   "engines": {
     "npm": "use pnpm please!",
