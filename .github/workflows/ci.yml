@@ -49,7 +49,7 @@ jobs:
 
     - name: build
       run: |
-        bun build
+        bun run build
 
     - name: lint report
       run: |

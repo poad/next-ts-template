@@ -1,7 +1,7 @@
 import withBundleAnalyzer from '@next/bundle-analyzer';
+import { NextConfig } from 'next';
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: NextConfig = {
   output: 'export',
   cleanDistDir: true,
   images: {
@@ -18,9 +18,9 @@ const nextConfig = {
 
 const config =
   process.env.ANALYZE === 'true'
-    ? withBundleAnalyzer(nextConfig)({
+    ? withBundleAnalyzer({
         enabled: true,
-      })
+      })(nextConfig)
     : nextConfig;
 
 export default config;
