@@ -22,9 +22,9 @@
     "@emotion/react": "^11.14.0",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^6.2.1",
-    "@mui/material": "^6.2.1",
-    "@mui/material-nextjs": "^6.2.1",
+    "@mui/icons-material": "^6.3.0",
+    "@mui/material": "^6.3.0",
+    "@mui/material-nextjs": "^6.3.0",
     "@mui/x-date-pickers": "^7.23.3",
     "autoprefixer": "^10.4.20",
     "material-react-table": "^3.1.0",
@@ -73,7 +73,7 @@
     "rimraf": "^6.0.1",
     "storybook": "^8.4.7",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.18.1"
+    "typescript-eslint": "^8.18.2"
   },
   "engines": {
     "npm": "use pnpm please!",
