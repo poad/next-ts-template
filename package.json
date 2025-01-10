@@ -25,7 +25,7 @@
     "@mui/icons-material": "^6.3.1",
     "@mui/material": "^6.3.1",
     "@mui/material-nextjs": "^6.3.1",
-    "@mui/x-date-pickers": "^7.23.3",
+    "@mui/x-date-pickers": "^7.23.6",
     "autoprefixer": "^10.4.20",
     "material-react-table": "^3.1.0",
     "next": "^15.1.4",
