@@ -58,7 +58,7 @@
     "@stylistic/eslint-plugin-plus": "^3.0.1",
     "@stylistic/eslint-plugin-ts": "^3.0.1",
     "@tailwindcss/postcss": "^4.0.3",
-    "@types/node": "^22.13.0",
+    "@types/node": "^22.13.1",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "cross-env": "^7.0.3",
@@ -74,13 +74,13 @@
     "eslint-plugin-storybook": "^0.11.2",
     "msw": "^2.7.0",
     "msw-storybook-addon": "^2.0.4",
-    "pnpm": "^10.1.0",
+    "pnpm": "^10.2.0",
     "postcss-loader": "^8.1.1",
     "rimraf": "^6.0.1",
     "storybook": "^8.5.3",
     "style-loader": "^4.0.0",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.22.0"
+    "typescript-eslint": "^8.23.0"
   },
   "engines": {
     "npm": "use pnpm please!",
