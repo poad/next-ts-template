@@ -29,7 +29,7 @@
     "autoprefixer": "^10.4.20",
     "material-react-table": "^3.2.0",
     "next": "^15.1.7",
-    "postcss": "^8.5.2",
+    "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-jsx": "^5.1.6",
