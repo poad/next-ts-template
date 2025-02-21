@@ -72,7 +72,7 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-storybook": "^0.11.3",
-    "msw": "^2.7.0",
+    "msw": "^2.7.1",
     "msw-storybook-addon": "^2.0.4",
     "pnpm": "^10.4.1",
     "postcss-loader": "^8.1.1",

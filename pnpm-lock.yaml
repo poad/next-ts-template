@@ -173,11 +173,11 @@ importers:
         specifier: ^0.11.3
         version: 0.11.3(eslint@9.20.1(jiti@2.4.2))(typescript@5.7.3)
       msw:
-        specifier: ^2.7.0
-        version: 2.7.0(@types/node@22.13.4)(typescript@5.7.3)
+        specifier: ^2.7.1
+        version: 2.7.1(@types/node@22.13.4)(typescript@5.7.3)
       msw-storybook-addon:
         specifier: ^2.0.4
-        version: 2.0.4(msw@2.7.0(@types/node@22.13.4)(typescript@5.7.3))
+        version: 2.0.4(msw@2.7.1(@types/node@22.13.4)(typescript@5.7.3))
       pnpm:
         specifier: ^10.4.1
         version: 10.4.1
@@ -1014,6 +1014,10 @@ packages:
     resolution: {integrity: sha512-DWUB2pksgNEb6Bz2fggIy1wh6fGgZP4Xyy/Mt0QZPiloKKXerbqq9D3SBQTlCRYOrcRPu4vuz+CGjwdfqxnoWA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
+  '@eslint/core@0.12.0':
+    resolution: {integrity: sha512-cmrR6pytBuSMTaBweKoGMwu3EiHiEC+DoyupPmlZ0HxBJBtIxwe+j/E4XPIKNx+Q74c8lXKPwYawBf5glsTkHg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
   '@eslint/eslintrc@2.1.4':
     resolution: {integrity: sha512-269Z39MS6wVJtsoUl10L60WdkhJVdPG24Q4eZTH3nnF6lpvSShEK3wQjDX9JRWAUPvPh7COouPpU9IrqaZFvtQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -1034,8 +1038,8 @@ packages:
     resolution: {integrity: sha512-RBMg5FRL0I0gs51M/guSAj5/e14VQ4tpZnQNWwuDT66P14I43ItmPfIZRhO9fUVIPOAQXU47atlywZ/czoqFPA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/plugin-kit@0.2.6':
-    resolution: {integrity: sha512-+0TjwR1eAUdZtvv/ir1mGX+v0tUoR3VEPB8Up0LLJC+whRW0GgBBtpbOkg/a/U4Dxa6l5a3l9AJ1aWIQVyoWJA==}
+  '@eslint/plugin-kit@0.2.7':
+    resolution: {integrity: sha512-JubJ5B2pJ4k4yGxaNLdbjrnk9d/iDz6/q8wOilpIowd6PJPgaxCuHBnBszq7Ce2TyMrywm5r4PnKm6V3iiZF+g==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@humanfs/core@0.19.1':
@@ -3770,8 +3774,8 @@ packages:
     peerDependencies:
       msw: ^2.0.0
 
-  msw@2.7.0:
-    resolution: {integrity: sha512-BIodwZ19RWfCbYTxWTUfTXc+sg4OwjCAgxU1ZsgmggX/7S3LdUifsbUPJs61j0rWb19CZRGY5if77duhc0uXzw==}
+  msw@2.7.1:
+    resolution: {integrity: sha512-TVT65uoWt9LE4lMTLBdClHBQVwvZv5ofac1YyE119nCrNyXf4ktdeVnWH9Fyt94Ifmiedhw6Npp4DSuVRSuRpw==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
@@ -5913,6 +5917,10 @@ snapshots:
     dependencies:
       '@types/json-schema': 7.0.15
 
+  '@eslint/core@0.12.0':
+    dependencies:
+      '@types/json-schema': 7.0.15
+
   '@eslint/eslintrc@2.1.4':
     dependencies:
       ajv: 6.12.6
@@ -5947,9 +5955,9 @@ snapshots:
 
   '@eslint/object-schema@2.1.6': {}
 
-  '@eslint/plugin-kit@0.2.6':
+  '@eslint/plugin-kit@0.2.7':
     dependencies:
-      '@eslint/core': 0.11.0
+      '@eslint/core': 0.12.0
       levn: 0.4.1
 
   '@humanfs/core@0.19.1': {}
@@ -8225,7 +8233,7 @@ snapshots:
       '@eslint/core': 0.11.0
       '@eslint/eslintrc': 3.2.0
       '@eslint/js': 9.20.0
-      '@eslint/plugin-kit': 0.2.6
+      '@eslint/plugin-kit': 0.2.7
       '@humanfs/node': 0.16.6
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.4.1
@@ -9060,12 +9068,12 @@ snapshots:
 
   ms@2.1.3: {}
 
-  msw-storybook-addon@2.0.4(msw@2.7.0(@types/node@22.13.4)(typescript@5.7.3)):
+  msw-storybook-addon@2.0.4(msw@2.7.1(@types/node@22.13.4)(typescript@5.7.3)):
     dependencies:
       is-node-process: 1.2.0
-      msw: 2.7.0(@types/node@22.13.4)(typescript@5.7.3)
+      msw: 2.7.1(@types/node@22.13.4)(typescript@5.7.3)
 
-  msw@2.7.0(@types/node@22.13.4)(typescript@5.7.3):
+  msw@2.7.1(@types/node@22.13.4)(typescript@5.7.3):
     dependencies:
       '@bundled-es-modules/cookie': 2.0.1
       '@bundled-es-modules/statuses': 1.0.1
