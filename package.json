@@ -33,7 +33,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-jsx": "^5.1.6",
-    "tailwindcss": "^4.0.12",
+    "tailwindcss": "^4.0.13",
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
@@ -57,7 +57,7 @@
     "@stylistic/eslint-plugin-jsx": "^4.2.0",
     "@stylistic/eslint-plugin-plus": "^4.2.0",
     "@stylistic/eslint-plugin-ts": "^4.2.0",
-    "@tailwindcss/postcss": "^4.0.12",
+    "@tailwindcss/postcss": "^4.0.13",
     "@types/node": "^22.13.10",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
@@ -65,7 +65,7 @@
     "css-loader": "^7.1.2",
     "eslint": "^9.22.0",
     "eslint-config-next": "^15.2.2",
-    "eslint-import-resolver-typescript": "^3.8.4",
+    "eslint-import-resolver-typescript": "^3.8.5",
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
