@@ -33,7 +33,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-jsx": "^5.1.6",
-    "tailwindcss": "^4.0.14",
+    "tailwindcss": "^4.0.15",
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
@@ -57,8 +57,8 @@
     "@stylistic/eslint-plugin-jsx": "^4.2.0",
     "@stylistic/eslint-plugin-plus": "^4.2.0",
     "@stylistic/eslint-plugin-ts": "^4.2.0",
-    "@tailwindcss/postcss": "^4.0.14",
-    "@types/node": "^22.13.10",
+    "@tailwindcss/postcss": "^4.0.15",
+    "@types/node": "^22.13.11",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "cross-env": "^7.0.3",
