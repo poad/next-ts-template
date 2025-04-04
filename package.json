@@ -33,7 +33,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "styled-jsx": "^5.1.6",
-    "tailwindcss": "^4.1.1",
+    "tailwindcss": "^4.1.2",
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
@@ -57,7 +57,7 @@
     "@stylistic/eslint-plugin-jsx": "^4.2.0",
     "@stylistic/eslint-plugin-plus": "^4.2.0",
     "@stylistic/eslint-plugin-ts": "^4.2.0",
-    "@tailwindcss/postcss": "^4.1.1",
+    "@tailwindcss/postcss": "^4.1.2",
     "@types/node": "^22.14.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.1",
@@ -69,7 +69,7 @@
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-storybook": "^0.12.0",
     "msw": "^2.7.3",
