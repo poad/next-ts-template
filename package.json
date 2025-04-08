@@ -74,13 +74,13 @@
     "eslint-plugin-storybook": "^0.12.0",
     "msw": "^2.7.3",
     "msw-storybook-addon": "^2.0.4",
-    "pnpm": "^10.7.1",
+    "pnpm": "^10.8.0",
     "postcss-loader": "^8.1.1",
     "rimraf": "^6.0.1",
     "storybook": "^8.6.12",
     "style-loader": "^4.0.0",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.29.0"
+    "typescript-eslint": "^8.29.1"
   },
   "engines": {
     "npm": "use pnpm please!",
