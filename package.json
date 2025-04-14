@@ -58,8 +58,8 @@
     "@stylistic/eslint-plugin-plus": "^4.2.0",
     "@stylistic/eslint-plugin-ts": "^4.2.0",
     "@tailwindcss/postcss": "^4.1.3",
-    "@types/node": "^22.14.0",
-    "@types/react": "19.1.0",
+    "@types/node": "^22.14.1",
+    "@types/react": "19.1.1",
     "@types/react-dom": "19.1.2",
     "cross-env": "^7.0.3",
     "css-loader": "^7.1.2",
@@ -72,9 +72,9 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-storybook": "^0.12.0",
-    "msw": "^2.7.3",
+    "msw": "^2.7.4",
     "msw-storybook-addon": "^2.0.4",
-    "pnpm": "^10.8.0",
+    "pnpm": "^10.8.1",
     "postcss-loader": "^8.1.1",
     "rimraf": "^6.0.1",
     "storybook": "^8.6.12",
@@ -93,7 +93,7 @@
   "pnpm": {
     "overrides": {
       "esbuild": ">=0.25.0",
-      "@types/react": "19.1.0",
+      "@types/react": "19.1.1",
       "@types/react-dom": "19.1.2"
     },
     "onlyBuiltDependencies": [
